@@ -204,7 +204,8 @@ i {
 }
 
 footer {
-    background-color: #2e2e2e;
+    /* background-color: #2e2e2e; */
+    background-color: darkgrey;
     color: #ffffff;
     padding: 40px 10%;
 }
@@ -259,12 +260,14 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-top: 1px solid #444444;
+    /* border-top: 1px solid #444444; */
+    border-top: 1px solid white;
     padding-top: 20px;
 }
 
 .footer-bottom p {
-    color: #bbbbbb;
+    /* color: #bbbbbb; */
+    color: white;
 }
 
 .footer-bottom a {
