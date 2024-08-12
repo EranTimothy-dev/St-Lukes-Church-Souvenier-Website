@@ -151,6 +151,16 @@ body {
     background-size: cover;
 }
 
+#f4{
+    background-image: url('pages/first.jpg'); 
+    background-size: cover;
+}
+
+#b4{
+    background-image: url('pages/second.jpg'); 
+    background-size: cover;
+}
+
 
 .front-content,
 .back-content {
@@ -211,6 +221,10 @@ i {
 
 #p3 {
     z-index: 1;
+}
+
+#p4 {
+    z-index: 0;
 }
 
 footer {
