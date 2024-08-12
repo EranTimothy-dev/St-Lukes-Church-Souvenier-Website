@@ -6,6 +6,8 @@ const book = document.querySelector("#book");
 const paper1 = document.querySelector("#p1");
 const paper2 = document.querySelector("#p2");
 const paper3 = document.querySelector("#p3");
+const paper4 = document.querySelector("#p4");
+const paper5 = document.querySelector("#p5");
 
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
@@ -13,7 +15,7 @@ nextBtn.addEventListener("click", goNextPage);
 
 // Business Logic
 let currentLocation = 1;
-let numOfPapers = 3;
+let numOfPapers = 5;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
@@ -48,6 +50,16 @@ function goNextPage() {
             case 3:
                 paper3.classList.add("flipped");
                 paper3.style.zIndex = 3;
+                // closeBook(false);
+                break;
+            case 4:
+                paper4.classList.add("flipped");
+                paper4.style.zIndex = 4;
+                // closeBook(false);
+                break;
+            case 5:
+                paper5.classList.add("flipped");
+                paper5.style.zIndex = 5;
                 closeBook(false);
                 break;
             default:
@@ -70,9 +82,19 @@ function goPrevPage() {
                 paper2.style.zIndex = 2;
                 break;
             case 4:
-                openBook();
+                // openBook();
                 paper3.classList.remove("flipped");
                 paper3.style.zIndex = 1;
+                break;
+            case 5:
+                // openBook();
+                paper4.classList.remove("flipped");
+                paper4.style.zIndex = 0;
+                break;
+            case 6:
+                openBook();
+                paper5.classList.remove("flipped");
+                paper5.style.zIndex = -1;
                 break;
             default:
                 throw new Error("unkown state");
