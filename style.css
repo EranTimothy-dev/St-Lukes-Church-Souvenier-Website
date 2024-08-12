@@ -257,6 +257,7 @@ footer {
 #contact {
     color: #180fc1;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 5%;
 }
 
 .footer-content {
@@ -295,24 +296,27 @@ footer {
 
 
 .social-media a {
-    margin-left: 30px;
+    /* margin-top: 10%; */
+    /* padding-top: 10%; */
+    margin: 3%;
 }
 
 .social-media img {
     width: 2rem;
     height: 2rem;
+    margin-top: 3%;
     filter: invert(1);
 }
 
 .footer-bottom {
-    margin-top: 20px;
+    /* margin-top: 0px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     /* border-top: 1px solid #444444; */
     border-top: 1px solid white;
-    padding-top: 20px;
+    padding-top: 2%;
 }
 
 .footer-bottom p {
