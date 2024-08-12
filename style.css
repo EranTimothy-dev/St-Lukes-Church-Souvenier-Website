@@ -177,12 +177,13 @@ body {
     transition: transform 0.5s;
 }
 
-#prev-btn, #next-btn:focus {
+#prev-btn:focus, #next-btn:focus {
     outline: none;
 }
 
-#prev-btn, #next-btn:hover i {
-    color: #636363;
+#prev-btn:hover i, #next-btn:hover i {
+    /* color: #636363; */
+    color: #6c63ff;
 }
 
 i {
@@ -206,6 +207,7 @@ i {
 footer {
     /* background-color: #2e2e2e; */
     background-color: rgb(138, 138, 138);
+    /* background-color: rgb(34, 34, 34); */
     color: #ffffff;
     padding: 40px 10%;
 }
