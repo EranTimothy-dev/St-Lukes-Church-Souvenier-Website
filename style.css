@@ -205,13 +205,13 @@ i {
 
 footer {
     /* background-color: #2e2e2e; */
-    background-color: darkgrey;
+    background-color: rgb(138, 138, 138);
     color: #ffffff;
     padding: 40px 10%;
 }
 
 #contact {
-    color: #6c63ff;
+    color: #180fc1;
     font-family: 'Lato', sans-serif;
 }
 
