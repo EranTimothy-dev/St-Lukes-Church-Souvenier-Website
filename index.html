@@ -7,13 +7,25 @@
     <title>Book</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js" defer></script>
-    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5fd1891ff8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>St.Luke's Church Mampe</h1>
+            <h2>50 Years of Faithfulness</h2>
+            <p>Celebrating the church's journey and spiritual milestones.</p>
+            <a href="#magazine" class="btn-primary">Read More</a>
+        </div>
+    </section>
+    <h1 id="magazine-heading"> Souvenier</h1>
+
+
+    <div class="container">    
     <!-- Previous Button -->
-    <button id="prev-btn">
-        <i class="fas fa-arrow-circle-left"></i>
-    </button>
+    
 
 
     <!-- Book -->
@@ -21,47 +33,78 @@
         <!-- Paper 1 -->
         <div id="p1" class="paper">
             <div class="front">
-                <div id="f1" class="front-content">
-                    <h1>Front 1</h1>
-                </div>
+                <div id="f1" class="front-content"></div>
             </div>
             <div class="back">
-                <div id="b1" class="back-content">
-                    <h1>Back 1</h1>
-                </div>
+                <div id="b1" class="back-content"></div>
             </div>
         </div>
         <!-- Paper 2 -->
         <div id="p2" class="paper">
             <div class="front">
-                <div id="f2" class="front-content">
-                    <h1>Front 2</h1>
-                </div>
+                <div id="f2" class="front-content"></div>
             </div>
             <div class="back">
-                <div id="b2" class="back-content">
-                    <h1>Back 2</h1>
-                </div>
+                <div id="b2" class="back-content"></div>
             </div>
         </div>
         <!-- Paper 3 -->
         <div id="p3" class="paper">
             <div class="front">
-                <div id="f3" class="front-content">
-                    <h1>Front 3</h1>
-                </div>
+                <div id="f3" class="front-content"></div>
             </div>
             <div class="back">
-                <div id="b3" class="back-content">
-                    <h1>Back 3</h1>
-                </div>
+                <div id="b3" class="back-content"></div>
             </div>
         </div>
     </div>
-
+    
     <!-- Next Button -->
-    <button id="next-btn">
-        <i class="fas fa-arrow-circle-right"></i>
-    </button>
+    
+    </div>
+    <div class="controller-btns">
+        <button type="button" id="prev-btn">
+            <i class="fas fa-arrow-circle-left"></i><i>previous</i>
+        </button>
+        <button type="button" id="next-btn">
+            <i>next</i><i class="fas fa-arrow-circle-right"></i>
+        </button>
+    </div>
+    <!-- <div id="next-btn">
+        <i class="fa-solid fa-circle-arrow-right"></i>
+    </div> -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>St.Luke's Church Mampe</h1>
+                <p id="contact">Contact : +94 77 777 7777</p>
+            </div>
+            <nav class="footer-nav">
+                <!-- <ul> -->
+                    <!-- <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul> -->
+                <!-- <a href="#"><img src="icons/square-facebook-brands-solid.svg" alt="Facebook" style="width: 30px; padding-right: 4%; height: 30px;"></a>
+                <a href="#"><img src="icons/x-twitter-brands-solid.svg" alt="Twitter" style="width: 30px; padding-right: 4%; height: 30px;"></a>
+                <a href="#"><img src="icons/linkedin-brands-solid.svg" alt="LinkedIn" style="width: 30px; padding-right: 4%; height: 30px;"></a>
+                <a href="#"><img src="icons/youtube-brands-solid.svg" alt="YouTube" style="width: 30px; padding-right: 4%; height: 30px;"></a> -->
+            </nav>
+            <div class="social-media">
+                <a href="#"><img src="icons/square-facebook-brands-solid.svg" alt="Facebook"></a>
+                <a href="#"><img src="icons/envelope-solid.svg" alt="Email"></a>
+                <a href="#"><img src="icons/linkedin-brands-solid.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="icons/youtube-brands-solid.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 St.Luke's Church Mampe. · <a href="#">Privacy</a> · <a href="#">Terms</a>
+        </div>
+    </footer>
 </body>
 </html>

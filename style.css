@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +8,71 @@
 
 body {
     height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    /* background-color: powderblue; */
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bible.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.hero .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .hero-content .btn-primary {
+    background-color: #6c63ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#magazine-heading {
+    display: flex;
+    justify-content: center;
+    font-family: Passion One;
+    color: #6c63ff;
+    font-size: 3rem;
+}
+
+.container {
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     font-family: sans-serif;
-    background-color: powderblue;
+    background-color: white;
 }
+
 
 /* Book */
 .book {
     position: relative;
-    width: 350px;
+    width: 400px; /* change the size of the book to responsive layout*/
     height: 500px;
     transition: transform 0.5s;
 }
@@ -54,6 +109,39 @@ body {
     z-index: 0;
 }
 
+
+/* pages */
+ #f1{
+    background-image: url('pages/first.jpg'); 
+    background-size: cover;
+} 
+
+#b1{
+    background-image: url('pages/second.jpg'); 
+    background-size: cover;
+} 
+
+#f2{
+    background-image: url('pages/third.jpg'); 
+    background-size: cover;
+}
+
+#b2{
+    background-image: url('pages/fourth.jpg'); 
+    background-size: cover;
+}
+
+#f3{    
+    background-image: url('pages/fifth.jpg'); 
+    background-size: cover;
+}
+
+#b3{
+    background-image: url('pages/sixth.jpg'); 
+    background-size: cover;
+}
+
+
 .front-content,
 .back-content {
     width: 100%;
@@ -73,8 +161,14 @@ body {
     transform: rotateY(-180deg);
 }
 
+
+.controller-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Controller Buttons */
-button {
+#prev-btn, #next-btn {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -82,17 +176,17 @@ button {
     transition: transform 0.5s;
 }
 
-button:focus {
+#prev-btn, #next-btn:focus {
     outline: none;
 }
 
-button:hover i {
+#prev-btn, #next-btn:hover i {
     color: #636363;
 }
 
 i {
-    font-size: 50px;
-    color: gray;
+    font-size: 1.5rem;
+    color: black;
 }
 
 /* Paper stack order */
@@ -106,4 +200,196 @@ i {
 
 #p3 {
     z-index: 1;
+}
+
+footer {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 40px 10%;
+}
+
+#contact {
+    color: #6c63ff;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #bbbbbb;
+    font-weight: bold;
+}
+
+.footer-nav ul li a:hover {
+    color: #ffffff;
+}
+
+.social-media a {
+    margin-left: 30px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #444444;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #bbbbbb;
+}
+
+.footer-bottom a {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets and small laptops (768px and above) */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    .hero {
+        padding: 80px 5%;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero .hero-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero .hero-content p {
+        font-size: 1rem;
+    }
+
+    .container {
+        height: 50%;
+        
+    }
+
+    #book {
+        display: flex;
+        width: 50%;
+        height: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .footer-nav ul {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero .hero-content .btn-primary {
+        padding: 8px 16px;
+    }
+
+    .container {
+        height: 50%;
+        
+    }
+
+    #book {
+        display: flex;
+        width: 50%;
+        height: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
 }
