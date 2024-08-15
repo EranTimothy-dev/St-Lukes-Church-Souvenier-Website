@@ -42,24 +42,49 @@ function goNextPage() {
                 openBook();
                 paper1.classList.add("flipped");
                 paper1.style.zIndex = 1;
+                console.log(currentLocation +" " + paper1.style.zIndex);   
+                console.log(currentLocation +" " + paper2.style.zIndex);   
+                console.log(currentLocation +" " + paper3.style.zIndex);   
+                console.log(currentLocation +" " + paper4.style.zIndex);   
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 break;
             case 2:
                 paper2.classList.add("flipped");
                 paper2.style.zIndex = 2;
+                console.log(currentLocation +" " + paper1.style.zIndex);
+                console.log(currentLocation +" " + paper2.style.zIndex);
+                console.log(currentLocation +" " + paper3.style.zIndex);
+                console.log(currentLocation +" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 break;
             case 3:
                 paper3.classList.add("flipped");
                 paper3.style.zIndex = 3;
+                console.log(currentLocation+" " + paper1.style.zIndex);
+                console.log(currentLocation+" " + paper2.style.zIndex);
+                console.log(currentLocation+" " + paper3.style.zIndex);
+                console.log(currentLocation+" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 // closeBook(false);
                 break;
             case 4:
                 paper4.classList.add("flipped");
                 paper4.style.zIndex = 4;
+                console.log(currentLocation +" " + paper1.style.zIndex);
+                console.log(currentLocation +" " + paper2.style.zIndex);
+                console.log(currentLocation +" " + paper3.style.zIndex);
+                console.log(currentLocation +" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 // closeBook(false);
                 break;
             case 5:
                 paper5.classList.add("flipped");
                 paper5.style.zIndex = 5;
+                console.log(currentLocation +" " + paper1.style.zIndex);
+                console.log(currentLocation +" " + paper2.style.zIndex);
+                console.log(currentLocation +" " + paper3.style.zIndex);
+                console.log(currentLocation +" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 closeBook(false);
                 break;
             default:
@@ -76,25 +101,63 @@ function goPrevPage() {
                 closeBook(true);
                 paper1.classList.remove("flipped");
                 paper1.style.zIndex = 3;
+                paper2.style.zIndex = 2;
+                paper3.style.zIndex = 1;
+                paper4.style.zIndex = 0;
+                paper5.style.zIndex = -1;
+                console.log(currentLocation +" " + paper1.style.zIndex);
+                console.log(currentLocation +" " + paper2.style.zIndex);
+                console.log(currentLocation +" " + paper3.style.zIndex);
+                console.log(currentLocation +" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 break;
             case 3:
+                // closeBook(true);
                 paper2.classList.remove("flipped");
                 paper2.style.zIndex = 2;
+                paper3.style.zIndex = 1;
+                paper4.style.zIndex = 0;
+                paper5.style.zIndex = -1;
+                console.log(currentLocation +" " + paper1.style.zIndex);
+                console.log(currentLocation +" " + paper2.style.zIndex);
+                console.log(currentLocation +" " + paper3.style.zIndex);
+                console.log(currentLocation +" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 break;
             case 4:
                 // openBook();
                 paper3.classList.remove("flipped");
-                paper3.style.zIndex = 1;
+                paper3.style.zIndex = 2;
+                paper4.style.zIndex = 1;
+                paper5.style.zIndex = 0;
+                console.log(currentLocation +" " + paper1.style.zIndex);
+                console.log(currentLocation +" " + paper2.style.zIndex);
+                console.log(currentLocation +" " + paper3.style.zIndex);
+                console.log(currentLocation +" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 break;
             case 5:
                 // openBook();
                 paper4.classList.remove("flipped");
-                paper4.style.zIndex = 0;
+                paper4.style.zIndex = 3;
+                paper5.style.zIndex = 2;
+                console.log(currentLocation +" " + paper1.style.zIndex);
+                console.log(currentLocation +" " + paper2.style.zIndex);
+                console.log(currentLocation +" " + paper3.style.zIndex);
+                console.log(currentLocation +" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 break;
-            case 6:
+            case 6: 
                 openBook();
                 paper5.classList.remove("flipped");
-                paper5.style.zIndex = -1;
+                // paper4.style.zIndex = 3;
+                paper5.style.zIndex = 4;
+                console.log("case 6")
+                console.log(currentLocation +" " + paper1.style.zIndex);
+                console.log(currentLocation +" " + paper2.style.zIndex);
+                console.log(currentLocation +" " + paper3.style.zIndex);
+                console.log(currentLocation +" " + paper4.style.zIndex);
+                console.log(currentLocation +" " + paper5.style.zIndex);
                 break;
             default:
                 throw new Error("unkown state");
