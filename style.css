@@ -174,58 +174,6 @@ body {
     background-size: cover;
 }
 
-#f6{
-    background-image: url('pages/fifth.jpg'); 
-    background-size: cover;
-}
-
-#b6{
-    background-image: url('pages/sixth.jpg'); 
-    background-size: cover;
-}
-
-#f7{
-    background-image: url('pages/first.jpg'); 
-    background-size: cover;
-}
-
-#b7{
-    background-image: url('pages/second.jpg'); 
-    background-size: cover;
-}
-
-#f8{
-    background-image: url('pages/third.jpg'); 
-    background-size: cover;
-}
-
-#b8{
-    background-image: url('pages/fourth.jpg'); 
-    background-size: cover;
-}
-
-#f9{
-    background-image: url('pages/fifth.jpg'); 
-    background-size: cover;
-}
-
-#b9{
-    background-image: url('pages/sixth.jpg'); 
-    background-size: cover;
-}
-
-#f10{
-    background-image: url('pages/first.jpg'); 
-    background-size: cover;
-}
-
-#b10{
-    background-image: url('pages/second.jpg');  
-    background-size: cover;
-}
-
-
-
 
 .front-content,
 .back-content {
@@ -297,28 +245,6 @@ i {
 #p5 {
     z-index: -1;
 }
-
-#p6 {
-    z-index: -2;
-}
-
-#p7 {
-    z-index: -3;
-}
-
-#p8 {
-    z-index: -4;
-}
-
-#p9 {
-    z-index: -5;
-}
-
-#p10 {
-    z-index: -6;
-}
-
-
 
 footer {
     /* background-color: #2e2e2e; */
