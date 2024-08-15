@@ -103,7 +103,7 @@ body {
 
 .front,
 .back {
-    /* border: 5px solid rgb(101, 168, 244); */
+    border: 5px solid rgb(101, 168, 244);
     border-radius: 2%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: white;
