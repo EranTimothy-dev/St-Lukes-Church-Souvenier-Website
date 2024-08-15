@@ -82,7 +82,7 @@ body {
 /* Book */
 .book {
     position: relative;
-    width: 25vw; /* change the size of the book to responsive layout*/
+    width: 27vw; /* change the size of the book to responsive layout*/
     height: 80vh;
     transition: transform 0.5s;
     /* border: #180fc1 solid 10px; */
