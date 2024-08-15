@@ -85,10 +85,12 @@ body {
     width: 25vw; /* change the size of the book to responsive layout*/
     height: 80vh;
     transition: transform 0.5s;
+    /* border: #180fc1 solid 10px; */
     /* margin-top: 5%; */
 }
 
 .paper {
+    /* border: #180fc1 solid 10px; */
     margin-top: 5%;
     position: absolute;
     width: 100%;
@@ -101,7 +103,9 @@ body {
 
 .front,
 .back {
-    /* border: 5px solid black; */
+    border: 5px solid rgb(101, 168, 244);
+    border-radius: 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: white;
     position: absolute;
     width: 100%;
@@ -115,7 +119,7 @@ body {
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+    /* border-left: 10px solid powderblue; */
 }
 
 .back {
@@ -125,132 +129,125 @@ body {
 
 /* pages */
  #f1{
-    background-image: url('pages/first.jpg'); 
+    background-image: url('pages/frontcover.jpg'); 
     background-size: cover;
+;
 } 
 
 #b1{
-    background-image: url('pages/second.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0001.jpg'); 
     background-size: cover;
 } 
 
 #f2{
-    background-image: url('pages/third.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0002.jpg'); 
     background-size: cover;
 }
 
 #b2{
-    background-image: url('pages/fourth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0003.jpg'); 
     background-size: cover;
 }
 
 #f3{    
-    background-image: url('pages/fifth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0004.jpg'); 
     background-size: cover;
 }
 
 #b3{
-    background-image: url('pages/sixth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0005.jpg'); 
     background-size: cover;
 }
 
 #f4{
-    background-image: url('pages/first.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0006.jpg'); 
     background-size: cover;
 }
 
 #b4{
-    background-image: url('pages/second.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0007.jpg'); 
     background-size: cover;
 }
 
 #f5{
-    background-image: url('pages/third.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0008.jpg'); 
     background-size: cover;
 }
 
 #b5{
-    background-image: url('pages/fourth.jpg');  
+    background-image: url('pages/FINAL\ Souvernir_page-0009.jpg');  
     background-size: cover;
 }
 
 #f6{
-    background-image: url('pages/fifth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0010.jpg'); 
     background-size: cover;
 }
 
 #b6{
-    background-image: url('pages/sixth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0011.jpg'); 
     background-size: cover;
 }
 
 #f7{
-    background-image: url('pages/first.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0012.jpg'); 
     background-size: cover;
 }
 
 #b7{
-    background-image: url('pages/second.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0013.jpg'); 
     background-size: cover;
 }
 
 #f8{
-    background-image: url('pages/third.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0014.jpg'); 
     background-size: cover;
 }
 
 #b8{
-    background-image: url('pages/fourth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0015.jpg'); 
     background-size: cover;
 }
 
 #f9{
-    background-image: url('pages/fifth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0016.jpg'); 
     background-size: cover;
 }
 
 #b9{
-    background-image: url('pages/sixth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0017.jpg'); 
     background-size: cover;
 }
 
 #f10{
-    background-image: url('pages/first.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0018.jpg'); 
     background-size: cover;
 }
 
 #b10{
-    background-image: url('pages/second.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0019.jpg'); 
     background-size: cover;
 } 
 
 #f11{
-    background-image: url('pages/third.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0020.jpg'); 
     background-size: cover;
 }
 
 #b11{
-    background-image: url('pages/fourth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0021.jpg'); 
     background-size: cover;
 }
 
 #f12{
-    background-image: url('pages/fifth.jpg'); 
+    background-image: url('pages/FINAL\ Souvernir_page-0022.jpg'); 
     background-size: cover;
 }
 
 #b12{
-    background-image: url('pages/sixth.jpg'); 
+    background-image: url('pages/backcover.jpg'); 
     background-size: cover;
 }
-
-
-
-
-
-
-
-
 
 
 .front-content,
@@ -263,13 +260,15 @@ body {
 }
 
 .back-content {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
+    
 }
 
 /* Paper flip effect */
 .flipped .front,
 .flipped .back {
     transform: rotateY(-180deg);
+    /* box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.2); */
 }
 
 
@@ -355,19 +354,6 @@ i {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     /* background-color: #2e2e2e; */
     background-color: rgb(138, 138, 138);
@@ -398,25 +384,6 @@ footer {
 .footer-logo h3 {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-
-/* .footer-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.footer-nav ul li a {
-    text-decoration: none;
-    color: #bbbbbb;
-    font-weight: bold;
-}
-
-.footer-nav ul li a:hover {
-    color: #ffffff;
-} */
-
-
 .social-media a {
     /* margin-top: 10%; */
     /* padding-top: 10%; */
