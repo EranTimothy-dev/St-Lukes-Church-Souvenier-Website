@@ -83,7 +83,7 @@ body {
 .book {
     position: relative;
     width: 27vw; /* change the size of the book to responsive layout*/
-    height: 80vh;
+    height: 82vh;
     transition: transform 0.5s;
     /* border: #180fc1 solid 10px; */
     /* margin-top: 5%; */
@@ -366,6 +366,7 @@ footer {
     color: #180fc1;
     font-family: 'Lato', sans-serif;
     margin-bottom: 5%;
+    text-decoration: none;
 }
 
 .footer-content {
